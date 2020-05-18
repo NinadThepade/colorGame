@@ -2,9 +2,7 @@ import React, {useState} from 'react'
 
 import './ColorPicker.css'
 
-const COLORS = ['red', 'blue', 'green', 'yellow', 'coral']
-
-const ColorPicker = ({colorFill, incrementCount}) => {
+const ColorPicker = ({colors, colorFill, incrementCount}) => {
   const [active, setActive] = useState()
 
   const ColorClicked = (index, color) => {
@@ -15,7 +13,7 @@ const ColorPicker = ({colorFill, incrementCount}) => {
 
   return (
     <div className="color-picker">
-      {COLORS.map((color, index) => (
+      {colors.map((color, index) => (
       <div 
         key={index} 
         onClick={() => ColorClicked(index, color)} 
