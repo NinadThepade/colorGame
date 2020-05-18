@@ -1,0 +1,24 @@
+.game-controls {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.new-game-button {
+  color: #fff;
+  text-decoration: none;
+  background: #2979FF;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.moves-counter {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  font-size: 14px;
+}

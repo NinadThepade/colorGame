@@ -4,7 +4,7 @@ import './GridBoard.css'
 
 const GridBoard = () => {
   return (
-    <div>
+    <div className="grid-board">
       Grid Board component
     </div>
   )
