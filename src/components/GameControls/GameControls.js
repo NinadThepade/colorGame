@@ -2,12 +2,12 @@ import React from 'react'
 
 import './GameControls.css'
 
-const GameControls = () => {
+const GameControls = ({movesCounter, startClicked}) => {
   return (
     <div className="game-controls">
       <h1>Color Game</h1>
-      <button className="new-game-button">New Game</button>
-      <div className="moves-counter">Moves counter: </div>
+      <button onClick={startClicked} className="new-game-button">New Game</button>
+      <div className="moves-counter">Moves : {movesCounter}</div>
     </div>
   )
 }
