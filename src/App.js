@@ -28,7 +28,6 @@ function App() {
     graph.colorFill(colorIndex);
   }
 
-  console.log('Grid:', graph)
   return (
     <div className="App">
       <GameControls movesCounter={movesCounter} startClicked={startClicked}></GameControls>

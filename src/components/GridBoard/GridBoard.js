@@ -3,6 +3,16 @@ import React from 'react'
 import './GridBoard.css'
 
 const GridBoard = ({grid, colors}) => {
+  const checkIfGameOver = () => {
+    let colorIndexFirstCell = grid.nodes[0].color;
+    let nodesArray = Object.values(grid.nodes)
+    let isGameComplete = nodesArray.every((item) => item.color === colorIndexFirstCell)
+
+    if(isGameComplete) {
+      alert('Game Over')
+    }
+  }
+
   let rows = <div> No grid data</div>
   
   if(grid.nodes) {
@@ -13,6 +23,7 @@ const GridBoard = ({grid, colors}) => {
   
       return <div key={v} className={classString}></div>
     });
+    checkIfGameOver()
   }
 
   return (
