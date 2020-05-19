@@ -1,4 +1,4 @@
-const COLORS = [0,1,2,3,4]; // TODO: tie this together with the COLORS from App.js
+const COLORS = [0,1,2,3,4,5,6]; // TODO: tie this together with the COLORS from App.js
 
 const randomIndexFromCollection = (collection) => {
   var index = 0;

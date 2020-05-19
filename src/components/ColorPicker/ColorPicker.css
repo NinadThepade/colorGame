@@ -1,7 +1,9 @@
 .color-picker {
   display: flex;
-  width: 400px;
+  width: 380px;
   justify-content: space-between;
+  border: 1px solid #fff;
+  padding: 10px;
 }
 
 .picker {
@@ -10,28 +12,36 @@
   border-radius: 50px;
 }
 
-.red {
-  background-color: red;
- }
+.active {
+width: 40px;
+height: 40px;
+border: 5px solid aliceblue;
+}
+
+.violet {
+background-color: violet;
+}
+
+.indigo {
+background-color: indigo;
+}
 
 .blue {
-  background-color: blue;
- }
+background-color: blue;
+}
 
 .green {
-  background-color: olive;
- }
+background-color: olive;
+}
 
 .yellow {
-  background-color: gold;
- }
+background-color: gold;
+}
 
- .coral {
-  background-color: coral;
- }
+.orange {
+background-color: coral;
+}
 
- .active {
-  width: 40px;
-  height: 40px;
-  border: 5px solid aliceblue;
- }
+.red {
+background-color: red;
+}
