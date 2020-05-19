@@ -1,15 +1,5 @@
 const COLORS = [0,1,2,3,4,5,6]; // TODO: tie this together with the COLORS from App.js
 
-const randomIndexFromCollection = (collection) => {
-  var index = 0;
-  for (var i = 1, max = collection.length; i < max; i++) {
-    if (Math.random() < 1/(i+1)) {
-      index = i;
-    }
-  }
-  return index;
-}
-
 class Node {
   constructor(id, color) {
     this.id = id;
@@ -31,7 +21,7 @@ class Graph {
     this.nodes = {};
     this.edgesByNode = {};
     for (let i=0; i<size*size; i++) {
-      this.nodes[i] = new Node(i, randomIndexFromCollection(COLORS));
+      this.nodes[i] = new Node(i, Math.floor(Math.random() * (COLORS.length)));
     }
     this.setEdgeWeights();
   }
